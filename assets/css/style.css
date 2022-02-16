@@ -20,6 +20,7 @@ html{
     left: 0;
     height: 46.5px; 
     background-color: black;
+    z-index: 1;
 }
 
 #nav {
@@ -61,11 +62,11 @@ html{
 }
 
 #nav .subnav {
+    position: absolute;
+    left: 0;
+    top: 100%;
     display: none;
     min-width: 158.613px;
-    position: absolute;
-    top: 100%;
-    left: 0;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -98,15 +99,60 @@ html{
 }
 
 #slider {
+    position: relative;
     margin-top: 46.5px;
     padding-top: 50%;
     background: url(/assets/img/Slider/chicago.jpg) top center / cover no-repeat ;
+}
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+#slider .text-heading{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
 }
 
 #content {
 
 }
 
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px ;
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    opacity: 0.6;
+    margin-top: 25px
+}
+
+#content .about-text{
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
 #footer {
 
 }
